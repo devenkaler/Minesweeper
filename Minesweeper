@@ -124,10 +124,7 @@ while running:
             draw_text("WIN", pygame.font.SysFont("Bitmap", 200, bold = True), "white", 158, 200)
         else:
             draw_text("LOSE", pygame.font.SysFont("Bitmap", 200, bold = True), "white", 105, 200)
-        if mousex > 65 and mousex < 535 and mousey > 350 and mousey < 397:
-            draw_text("CLICK TO RESET", pygame.font.SysFont("Bitmap", 80, bold = True), (245,245,245), 65, 350)
-        else:
-            draw_text("CLICK TO RESET", pygame.font.SysFont("Bitmap", 80, bold = True), "white", 65, 350)
+        draw_text("CLICK TO RESET", pygame.font.SysFont("Bitmap", 80, bold = True), "white", 65, 350)
 
     if posx >= 0 and posx <= 15 and posy >= 0 and posy <= 15:
         if pygame.mouse.get_pressed()[0]:
@@ -145,7 +142,7 @@ while running:
                         win = not check_win()
                     if pygame.mouse.get_pressed()[2] and grid[posx][posy] > 0:
                         special(posx, posy)
-            elif game_state == "game over" and mousex > 65 and mousex < 535 and mousey > 350 and mousey < 397:
+            elif game_state == "game over":
                 game_state = "first turn"
                 grid = [[0 for i in range(wid)] for i in range(leng)]
                 seen = [[0 for i in range(wid)] for i in range(leng)]
