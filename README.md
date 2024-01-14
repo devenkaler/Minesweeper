@@ -1,4 +1,5 @@
-Recreation of Classic Minesweeper
+Recreation of Classic Minesweeper, 16x16 grid with 40 mines
+
 
 Left Click to uncover square
 
