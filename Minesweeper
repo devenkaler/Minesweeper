@@ -78,7 +78,6 @@ def reveal(x, y):
 
 def animate():
     global game_state
-    pygame.time.delay(20)
     for r in range(leng):
         for c in range(wid):
             pygame.display.flip()
