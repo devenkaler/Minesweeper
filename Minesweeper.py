@@ -138,10 +138,10 @@ while running:
                 game_state = "play"
             elif seen[posx][posy] != 2 and game_state == "play":
                     reveal(posx, posy)
-                    if win == False:
-                        win = not check_win()
                     if pygame.mouse.get_pressed()[2] and grid[posx][posy] > 0:
                         special(posx, posy)
+                    if win == False:
+                        win = not check_win()
             elif game_state == "game over":
                 game_state = "first turn"
                 grid = [[0 for i in range(wid)] for i in range(leng)]
