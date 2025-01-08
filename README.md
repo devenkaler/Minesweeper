@@ -7,7 +7,7 @@ Must have Pygame library
 
 To run program:
 
-```python3
+```python3 Minesweeper.py```
 
 Left Click to uncover square
 
