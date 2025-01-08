@@ -3,7 +3,11 @@ Recreation of Classic Minesweeper, 16x16 grid with 40 mines
 
 Must have Pygame library
 
-'''pip install pygame'''
+```pip install pygame```
+
+To run program:
+
+```python3
 
 Left Click to uncover square
 
